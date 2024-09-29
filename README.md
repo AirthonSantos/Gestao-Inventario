@@ -1,6 +1,6 @@
 # Gestão de Inventário
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/AirthonSantos/Gestao-Inventario/blob/main/LICENSE)
 
 ## Sobre
 Esse projeto foi desenvolvido para a disciplina de Programação Orientada a Objetos em Java do curso de Ciência da Computação.
