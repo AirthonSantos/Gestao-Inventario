@@ -1,0 +1,5 @@
+# Ignora o diretório target
+target/
+
+# Ignora o arquivo de log e outros arquivos temporários
+ArquivoLog.log*

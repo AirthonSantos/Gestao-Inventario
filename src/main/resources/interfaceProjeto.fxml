@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="telaprincipal" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacegrafica.Controlador">
+   <children>
+      <Label fx:id="titulo" alignment="CENTER" layoutX="140.0" layoutY="14.0" prefHeight="48.0" prefWidth="227.0" text="Gestão de Inventário">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="102.0" layoutY="62.0" prefHeight="125.0" prefWidth="302.0">
+         <children>
+            <Label fx:id="labelNome" layoutX="20.0" layoutY="14.0" text="Nome do Item:" />
+            <Label fx:id="labelQtd" layoutX="20.0" layoutY="50.0" text="Quantidade:" />
+            <Label fx:id="labelPreco" layoutX="20.0" layoutY="88.0" text="Preço:" />
+            <TextField fx:id="campoNome" layoutX="111.0" layoutY="10.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="campoQuantidade" layoutX="111.0" layoutY="50.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="campoPreco" layoutX="111.0" layoutY="84.0" prefHeight="25.0" prefWidth="177.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="19.0" layoutY="272.0" prefHeight="200.0" prefWidth="469.0">
+         <children>
+            <TableView fx:id="tabelaDados" layoutX="12.0" layoutY="10.0" prefHeight="181.0" prefWidth="445.0">
+              <columns>
+                <TableColumn fx:id="colunaOrdem" prefWidth="67.0" text="Ordem" />
+                <TableColumn fx:id="colunaNome" prefWidth="149.0" text="Nome" />
+                <TableColumn fx:id="colunaQuantidade" prefWidth="112.0" text="Quantidade" />
+                <TableColumn fx:id="colunaPreco" prefWidth="116.0" text="Preço" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="59.0" layoutY="187.0" prefHeight="57.0" prefWidth="390.0">
+         <children>
+            <Button fx:id="btnDeletar" layoutX="204.0" layoutY="16.0" mnemonicParsing="false" onAction="#removerDados" prefHeight="25.0" prefWidth="85.0" text="Deletar" />
+            <Button fx:id="btnInserir" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#inserirDados" prefHeight="25.0" prefWidth="85.0" text="Inserir" />
+            <Button fx:id="btnAlterar" layoutX="109.0" layoutY="16.0" mnemonicParsing="false" onAction="#alterarDados" prefHeight="25.0" prefWidth="85.0" text="Alterar" />
+            <Button fx:id="btnLimpar" layoutX="297.0" layoutY="16.0" mnemonicParsing="false" onAction="#atualizarDados" prefHeight="25.0" prefWidth="85.0" text="Limpar" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
