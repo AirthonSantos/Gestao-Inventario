@@ -3,9 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/AirthonSantos/Gestao-Inventario/blob/main/LICENSE)
 
 ## Sobre
-Esse projeto foi desenvolvido para a disciplina de Programação Orientada a Objetos em Java do curso de Ciência da Computação.
-
-O programa em questão é um CRUD desenvolvido em Java, que utiliza o banco de dados PostgreSQL. Para facilitar a comunicação com o banco de dados, foi empregado o framework Hibernate. Além disso, a aplicação adota o padrão DAO (Data Access Object) e o Singleton. Por fim, visando tornar o programa mais intuitivo, foi criado uma interface gráfica usando o JavaFX.
+O programa em questão é um CRUD criado em Java que utiliza o banco de dados PostgreSQL. Para facilitar a comunicação com o banco de dados foi usado o framework Hibernate. Além disso, a aplicação adota o padrão DAO (Data Access Object) e o padrão de design (Design Pattern) Singleton. Por fim, visando tornar o programa mais intuitivo, criei uma interface gráfica usando o JavaFX.
 
 ### Tela principal
 ![Tela Principal](telaPrincipal.png)
@@ -14,11 +12,11 @@ O ícone usado foi obtido do site icons8, segue o link: https://icons8.com/icon/
 
 ### Funcionalidades
 
-Visei tornar o programa o mais intuitivo possível, mas mesmo assim gostaria de explicar sobre suas funcionalidades:
+Busquei tornar o programa o mais intuitivo possível e gostaria de explicar suas funcionalidades:
 
-- **Inserção de dados**: Preencha os três campos de texto e clique em "Inserir".
-- **Alteração de dados**: Selecione um registro da tabela, os dados correspondentes serão automaticamente preenchidos nas caixas de texto. Em seguida, é só realizar as alterações desejadas e clicar em "Alterar".
-- **Remoção de dados**: Selecione um registro da tabela e clique em "Deletar".
+- **Inserção**: Preencha os três campos de texto e clique em "Inserir".
+- **Alteração**: Selecione um registro da tabela, os dados correspondentes serão automaticamente preenchidos nas caixas de texto. Em seguida, é só realizar as alterações desejadas e clicar em "Alterar".
+- **Remoção**: Selecione um registro da tabela e clique em "Deletar".
 - **Ordenação de colunas**: Clicando nos cabeçalhos de cada coluna, os elementos são ordenados, de forma crescente ou decrescente.
 - **Limpar seleção**: Se um registro estiver selecionado, clique no botão "Limpar" para desmarcá-lo. Isso também limpará o conteúdo das caixas de texto.
 
@@ -40,7 +38,7 @@ Por fim, a classe `Main` e o `Controlador` formam a interface gráfica. O `Contr
 ## Como executar
 ### Pré-requisitos
 
-É necessário instalar o JDK (22.0.2 ou superior) e o Maven (3.9.9 ou superior). Além disso, é necessária a instalação do PostgreSQL (16.1 ou superior).
+É necessário instalar o JDK (22.0.2 ou superior) e o Maven (3.9.9 ou superior). Além disso, é necessário instalar o PostgreSQL (16.1 ou superior).
 
 Nota: Esse projeto foi projetado para ser executado no Windows 10. Caso esteja utilizando um sistema operacional diferente, algumas funcionalidades podem não funcionar corretamente.
 
@@ -52,9 +50,9 @@ Para começar, é necessário clonar esse repositório.
 git clone https://github.com/AirthonSantos/Gestao-Inventario
 ```
 
-Na sequência, precisamos configurar o arquivo `credenciais.properties`. Esse arquivo possui as credenciais de acesso (usuário e senha) do PostgreSQL, além de outros dados como servidor, porta e banco. A princípio, a única coisa a ser alterada é o usuário e a senha, o resto dos valores são os padrões do PostgreSQL, portanto podem ser mantidos. Mas qualquer coisa, sinta-se à vontade para alterá-los. Lembrando que, no Windows, você pode abrir o arquivo com o bloco de notas.
+Na sequência, precisamos configurar o arquivo `credenciais.properties`. Esse arquivo contém as credenciais de acesso (usuário e senha) do PostgreSQL, além de outros dados, como servidor, porta e banco. A princípio, a única coisa a ser alterada são o usuário e a senha, os demais valores são os padrões do PostgreSQL e podem ser mantidos. Se necessário, sinta-se à vontade para alterá-los. Lembrando que, no Windows, você pode abrir o arquivo com o Bloco de Notas.
 
-Após isso, execute os seguintes comandos no diretório raiz da aplicação (primeiro diretório):
+Após isso, execute os seguintes comandos no diretório raiz da aplicação:
 
 ```bash
 # Compila e executa o projeto
