@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/AirthonSantos/Gestao-Inventario/blob/main/LICENSE)
 
 ## Sobre
-O programa em questão é um CRUD criado em Java que utiliza o banco de dados PostgreSQL. Para facilitar a comunicação com o banco de dados foi usado o framework Hibernate. Além disso, a aplicação adota o padrão DAO (Data Access Object) e o padrão de design (Design Pattern) Singleton. Por fim, visando tornar o programa mais intuitivo, criei uma interface gráfica usando o JavaFX.
+O programa em questão é um CRUD desenvolvido em Java, utilizando o banco de dados PostgreSQL. Para facilitar a comunicação com o banco, foi adotado o framework Hibernate. Além disso, a aplicação segue o padrão DAO e o padrão de design Singleton. Por fim, para tornar o programa mais intuitivo, criei uma interface gráfica com JavaFX.
 
 ### Tela principal
 ![Tela Principal](telaPrincipal.png)
@@ -12,20 +12,18 @@ O ícone usado foi obtido do site icons8, segue o link: https://icons8.com/icon/
 
 ### Funcionalidades
 
-Busquei tornar o programa o mais intuitivo possível e gostaria de explicar suas funcionalidades:
-
 - **Inserção**: Preencha os três campos de texto e clique em "Inserir".
-- **Alteração**: Selecione um registro da tabela, os dados correspondentes serão automaticamente preenchidos nas caixas de texto. Em seguida, é só realizar as alterações desejadas e clicar em "Alterar".
+- **Alteração**: Selecione um registro da tabela, os dados correspondentes serão automaticamente preenchidos nas caixas de texto. Em seguida, faça as modificações desejadas e clique em "Alterar".
 - **Remoção**: Selecione um registro da tabela e clique em "Deletar".
-- **Ordenação de colunas**: Clicando nos cabeçalhos de cada coluna, os elementos são ordenados, de forma crescente ou decrescente.
-- **Limpar seleção**: Se um registro estiver selecionado, clique no botão "Limpar" para desmarcá-lo. Isso também limpará o conteúdo das caixas de texto.
+- **Ordenação de colunas**: Clique no cabeçalho de uma coluna para ordenar os elementos de forma crescente ou decrescente.
+- **Limpar seleção**: Caso um registro esteja selecionado, clique no botão "Limpar" para desmarcá-lo e apagar o conteúdo das caixas de texto.
 
 ### Diagrama
-Elaborei também um diagrama de classes para ilustrar melhor a interação e a organização entre as classes.
+Também elaborei um diagrama de classes para ilustrar melhor a interação e organização entre elas."
 
 ![Diagrama de Classe](diagramaDeClasse.png)
 
-A classe `Produtos` é uma entidade JPA, o que significa que a mesma será gerenciada pelo Hibernate. Isso permite que o Hibernate crie uma tabela no banco de dados com uma estrutura que corresponda aos atributos da classe. Esse processo é denominado ORM (Object-Relational Mapping).
+A classe `Produtos` é uma entidade JPA, o que significa que a mesma será gerenciada pelo Hibernate. Isso permite que o Hibernate crie uma tabela no banco de dados com uma estrutura que corresponda aos atributos da classe.
 
 Essa classe também está relacionada à `ProdutosDAO`, pois a funcionalidade dela depende da classe `Produtos`. Como o próprio nome indica, `ProdutosDAO`, por ser uma classe DAO, atuará como intermediária em nosso contato com o banco de dados. Assim, sempre que precisarmos listar, salvar, alterar ou excluir dados, podemos utilizar os métodos fornecidos por ela.
 
@@ -50,7 +48,7 @@ Para começar, é necessário clonar esse repositório.
 git clone https://github.com/AirthonSantos/Gestao-Inventario
 ```
 
-Na sequência, precisamos configurar o arquivo `credenciais.properties`. Esse arquivo contém as credenciais de acesso (usuário e senha) do PostgreSQL, além de outros dados, como servidor, porta e banco. A princípio, a única coisa a ser alterada são o usuário e a senha, os demais valores são os padrões do PostgreSQL e podem ser mantidos. Se necessário, sinta-se à vontade para alterá-los. Lembrando que, no Windows, você pode abrir o arquivo com o Bloco de Notas.
+Em seguida, precisamos configurar o arquivo `credenciais.properties`, que contém as credenciais de acesso ao PostgreSQL (usuário e senha), além de informações como servidor, porta e banco. A princípio, apenas o usuário e a senha precisam ser alterados, pois os demais valores seguem os padrões do PostgreSQL e podem ser mantidos. Caso necessário, sinta-se à vontade para modificá-los. No Windows, o arquivo pode ser aberto com o bloco de notas.
 
 Após isso, execute os seguintes comandos no diretório raiz da aplicação:
 
